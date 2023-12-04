@@ -1,0 +1,9 @@
+<h3>Add a New Blog</h3>
+<%= form_with model: @blog do |form| %>
+    <%= form.text_field :title %>
+    <br/><br/>
+    <%= form.text_area :content %>
+    <br/><br/>
+    <%= form.submit %>
+    <h5><%= link_to 'Back to Blogs', blogs_path %> 
+<% end %>
